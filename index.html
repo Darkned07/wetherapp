@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wether-App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-600">
+    <main>
+      <section>
+        <div class="flex flex-col items-center justify-center mt-[50px]">
+          <h2 class="font-bold text-[25px] text-slate-400 tracking-[3px]">
+            Weather - App
+          </h2>
+          <div class="mt-[30px]">
+            <form id="change-location">
+              <label for="" class="flex flex-col gap-[5px]">
+                <span class="tracking-[3px] text-[10px] text-slate-400"
+                  >Enter a location for weather information</span
+                >
+                <input
+                  name="city"
+                  class="border rounded-[5px] py-[5px] px-[10px] text-[15px] border-blue-600 outline-blue-600"
+                  type="search"
+                />
+              </label>
+            </form>
+          </div>
+          <div
+            id="card"
+            class="mt-[70px] shadow-2xl bg-white w-[300px] rounded-[8px] pt-[70px] pb-[20px] px-[20px] flex flex-col items-center hidden justify-center gap-[10px] relative"
+          >
+            <div
+              class="bg-slate-300 absolute w-[70px] h-[70px] rounded-full top-[-35px]"
+            >
+              <img src="" id="weather-icon" alt="" />
+            </div>
+            <div
+              id="details"
+              class="flex flex-col justify-center items-center gap-[10px]"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/app.js"></script>
+    <script src="./js/forecast.js"></script>
+  </body>
+</html>
